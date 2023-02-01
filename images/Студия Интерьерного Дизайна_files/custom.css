@@ -1,0 +1,218 @@
+.fixed {
+    position: fixed !important;
+    z-index: 9 !important;
+}
+
+#rec465323356 {
+    z-index: 11 !important;
+}
+
+/* Блок проекты на главной */
+
+/*#rec466919760 {*/
+/*    z-index: 777!important;*/
+/*}*/
+
+#t-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 100%;
+    background: transparent;
+    z-index: 999;
+}
+
+@media (max-width: 960px) {
+    #t-header {
+        width: 100%;
+        height: 62px;
+    }
+    #rec465323474 .t396 .t396__artboard {
+        min-height: 62px;
+        height: 62px !important;
+    }
+}
+
+.link .tn-atom {
+    position: relative;
+    overflow: hidden;
+}
+
+.link .tn-atom:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #262626;
+    transform: translateX(-120%);
+    transition: all .4s ease-in-out;
+}
+
+.link:hover .tn-atom:before {
+    transform: translateX(0);
+}
+
+.proj__img {
+    overflow: hidden;
+}
+.proj__img .t-bgimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150%;
+    height: 100%;
+    transform: translateX(0);
+    transition: transform 1s ease-in-out;
+}
+.proj__img:hover .t-bgimg {
+    transform: translateX(-25%)
+}
+
+@media (max-width: 960px) {
+    .proj__img:hover .t-bgimg {
+        transform: translateX(0%)
+    }
+}
+
+.proj_-banner {
+    overflow: hidden;
+}
+.proj-banner .t-bgimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    transform: translateY(0);
+    transition: transform .75s ease-in-out;
+}
+.proj-banner:hover .t-bgimg {
+    transform: translateY(-10%)
+}
+
+/* КНОПКИ В ФОРМАХ */
+
+.form-invite .t-submit {
+    transition: all .3s ease-in-out;
+}
+.form-invite .t-submit:hover {
+    color: #262626 !important;
+    background-color: #fff !important;
+}
+
+.order__form .t-submit {
+    border: 2px solid #262626;
+    transition: all .3s ease-in-out;
+}
+.order__form .t-submit:hover {
+    color: #262626 !important;
+    background-color: #fff !important;
+}
+
+/* ПУНКТЫ МЕНЮ */
+
+.t-menu__link-item {
+    position: relative;
+    overflow: hidden;
+}
+.t-menu__link-item:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #262626;
+    transform: translateX(-120%);
+    transition: all .4s ease-in-out;
+}
+.t-menu__link-item:hover:before {
+    transform: translateX(0);
+}
+.t-menu__link-item.t-active:before {
+    transform: translateX(0);
+}
+
+/* ПОПАП КРЕСТИК 
+
+.t-popup__close {
+    background-color: #262626;
+    border-radius: 50%;
+} */
+
+/* ФИКСИРОВАННЫЙ БАННЕР */
+
+#rec465323356 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1 !important;
+}
+#rec465343785 {
+    margin-top: 100vh;
+}
+
+
+/* ПРОЕКТЫ ВНУТРЕННЯЯ */
+
+.t661 .t-container {
+    max-width: 1140px;
+    padding-left: 200px;
+}
+
+.t661 .t-container .t661__row {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.t661 .t-container .t661__row_indent-20px {
+    padding: 0 0px 20px 0px !important;
+}
+
+@media (max-width: 1200px) {
+    .t661 .t-container {
+        max-width: 810px !important;
+        padding-left: 100px !important;
+    }
+}
+
+@media (max-width: 960px) {
+    .t661 .t-container {
+        max-width: 600px !important;
+        padding-left: 0px !important;
+    }
+}
+
+@media (max-width: 640px) {
+    .t661 .t-container {
+        max-width: 440px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .t661 .t-container {
+        max-width: 300px !important;
+    }
+}
+
+/* СКРОЛЛБАР */
+@media screen and (min-width: 1201px) {
+    ::-webkit-scrollbar-thumb {
+        /* Укажи цвет скроллбара */
+        background: #262626;
+        /* Укажи радиус скругления скроллбара */
+        border-radius: 10px;
+    }
+    ::-webkit-scrollbar {
+        /* Укажи ширину вертикального скроллбара */
+        width: 8px;
+        /* Укажи высоту горизонтального скроллбара */
+        height: 8px;
+        /* Укажи цвет фона под скроллбаром */
+        background: #ffffff;
+    }
+}
